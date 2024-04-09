@@ -8,6 +8,9 @@ we can change the variable type in run time.
  #->Dynamicaly typed language means we can the variable type in runtime.(example- javascript)
 
  #-> Static type -> we first declare the type of variable, wheather it is a intger, float, or string.
+
+
+ let and const is better to use.
  */
 
 
@@ -16,7 +19,19 @@ we can change the variable type in run time.
   */
 
 
-let a = 23;
-let b = 32;
-let sum = a + b;
-console.log(sum);
+let a = 5;
+let b = 54;
+let c = "samiul";
+
+// let 6sam = 23; //variable name cannnot start with number.
+
+
+
+
+
+/**
+ * lets const and var difference.
+ * 
+ */
+
+
