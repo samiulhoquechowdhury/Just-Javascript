@@ -1,0 +1,40 @@
+<!--
+
+
+ * sometime we want to execute a code when a certain condition is met, then we use conditional expressions
+
+
+ ### prompt ask you questions, alert tell you statement.
+ 
+ */
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // let a = prompt("Hey! what is your age?");
+
+        // console.log(a)
+        // alert(`Your age is ${a}`)
+
+        
+        let a = prompt("Hey! what is your age?");
+        a = Number.parseInt(a); //converting a(string) to number.
+
+        if (a>18) {
+            alert("You are adult now.")
+        } else {
+            alert("You need to grow up buddy !");
+        }
+
+        // console.log(typeof(a));
+    </script>
+ </body>
+ </html>
+
