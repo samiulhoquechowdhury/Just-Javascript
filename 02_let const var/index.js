@@ -18,3 +18,12 @@ var d = undefined;
 }
 console.log(b)
 
+//const
+
+const author = "samiul" //we use const when we know thwt the will not change, and we want to keep it constant.
+
+
+// author = "jisnu"
+
+// let author = " rahul"// thr an error, because constant cannot change.
+ 
