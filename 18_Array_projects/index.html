@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+
+
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+function checkGuess(guess) {
+    if (guess === randomNumber) {
+        return "Congratulations! You guessed it right!";
+    } else if (guess < randomNumber) {
+        return "Nope. The number is greater than your guess.";
+    } else {
+        return "Nope. The number is smaller than your guess.";
+    }
+}
+
+function startGame() {
+    const userGuess = parseInt(prompt("Guess the number between 1 and 100:"));
+
+    if (isNaN(userGuess)) {
+        alert("Please enter a valid number.");
+    } else {
+        const result = checkGuess(userGuess);
+        alert(result);
+
+        if (result !== "Congratulations! You guessed it right!") {
+            const playAgain = confirm("Do you want to play again?");
+            if (playAgain) {
+                startGame();
+            }
+        }
+    }
+}
+startGame();
+
+
+</script>
+</body>
+</html>
