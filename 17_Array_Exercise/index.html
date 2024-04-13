@@ -14,18 +14,81 @@
  * Q:create an array of number and take input from the user to add number to this array.
  */
 
-let arr = [12,31,43,27,13]
-let userInput = prompt("Enter the number to add :");
-userInput = Number.parseInt(userInput)
-arr.push(userInput);
+// let arr = [12,31,43,27,13]
+// let userInput = prompt("Enter the number to add :");
+// userInput = Number.parseInt(userInput)
+// arr.push(userInput);
 
-console.log(arr);
+// console.log(arr);
+
+
+
+
+
 
 /*
 problem 2
+keep adding number to an array in Q1, untill 0 is added to the array.
+*/
 
+// let arr2 = []
+//  let a;
+//  do {
+//     a = prompt("Enter a number:")
+//     a = Number.parseInt(a)
+//     arr2.push(a)
+//  } while (a != 0);
+
+//  console.log(arr2)
+
+
+
+
+
+
+ /*
+problem 3: Filter for numbes divisible by 10 from an givrn array.
 
 */
+
+// let arr3 = [15,20,40,78,90,31,70,100];
+// let result = arr3.filter((arr3) => {
+//     return arr3 % 10 == 0;
+// });
+// console.log(result);
+
+
+
+
+ /*
+problem 4: create an array of square of given numbers, 
+*/
+
+// let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 45];
+// let n = arr4.map((x) => {
+//     return x * x;
+// });
+
+// for (let i = 0; i < arr4.length; i++) {
+//     console.log("The square of", arr4[i] + " is " + n[i]);
+// };
+
+
+
+
+
+
+//Problem 5 :
+//use reduce  to clculate factorial of a givrn number from an array of first n natural number.
+
+
+let arr5 = [1,2,3,4,5,6];
+let n = arr5.reduce((x1,x2)=>{
+    return x1*x2
+});
+console.log(n);
+
+
 
 
 
