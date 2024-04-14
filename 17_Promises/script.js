@@ -31,12 +31,13 @@ console.log(promise);
  * 
  * >> Fetch google.com homepage ==>> console.log("google.com homepage done")
  * 
- * >>Fetch data from the data api
+ *  >> Fetch data from the data api
  * 
- * >>Fetch picture from the server
+ *  >> Fetch picture from the server
  * 
- * >>Print Downloading
+ *  >> Print Downloading
  * 
- * >>Rest of the scipt.
+ *  >> Rest of the scipt.
+ * 
  */
 
