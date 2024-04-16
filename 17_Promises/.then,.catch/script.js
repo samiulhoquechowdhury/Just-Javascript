@@ -20,10 +20,10 @@ let p2 = new Promise((resolve, reject) => {
 
 // console.log(p2);
 
-p1.then((value) =>{
+p1.then((value) => {
     console.log(value);
 });
 
 p2.catch((error) =>{
-    console.log("Some error are there in p2.")
-})
+    console.log("Some error are there in p2.");
+});
