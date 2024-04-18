@@ -3,3 +3,4 @@
 //? The fetch() method is used to fetch a resourse (data).
 
 //syntax -> let promise = fetch(url, [option])
+
