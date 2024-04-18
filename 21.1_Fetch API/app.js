@@ -10,6 +10,8 @@ const factPara = document.querySelector("#facts");
 const btn = document.querySelector("#btn");
 
 
+//?better way
+
 const getFacts = async  () => {
 	console.log('getting data...')
 	let response = await fetch(URL);
@@ -17,7 +19,21 @@ const getFacts = async  () => {
 	let data = await response.json(); 
 	// console.log(data[2].text);
 	factPara.innerText = data[1].text
-}
+};
+
+
+// //!promise chaining
+// function getFacts(){
+// 	fetch(URL).then((response) =>{
+// 		return response.json();
+// 	})
+// 	.then((data) =>{
+// 		console.log(data)
+// 		factPara.innerText = data[2].text;
+// 	})
+// }
+
+
 btn.addEventListener("click", getFacts)
 
 
