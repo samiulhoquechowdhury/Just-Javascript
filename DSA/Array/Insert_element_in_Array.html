@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let data = [60, 30, 12, 54, 17, 87];
+    let newEl = 69;
+    let position = 2;
+
+    for (let i = data.length-1; i >= 0; i--){
+        console.log(i, data[i]);
+        // console.warn(i); 
+        if (i >= position) {
+            data[i + 1];
+            if(i == position) {
+                data[i] = newEl;
+            }
+        }
+    }   
+    console.log(data);   
+
+</script>
+
+</html>
