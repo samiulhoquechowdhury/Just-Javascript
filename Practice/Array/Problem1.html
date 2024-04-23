@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+<!--
+Question: Product of Array Except Self
+
+You are given an array nums of n integers where n > 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+
+Note: Please solve it without division and in O(n) time complexity.
+
+Example:
+
+Input: [1, 2, 3, 4]
+
+Output: [24, 12, 8, 6]
+
+Explanation:
+
+output[0] is equal to 2 * 3 * 4 = 24
+output[1] is equal to 1 * 3 * 4 = 12
+output[2] is equal to 1 * 2 * 4 = 8
+output[3] is equal to 1 * 2 * 3 = 6
+You may assume the product of all the elements in the array does not overflow the range of 32-bit signed integer.
+
+Your task is to implement a function productExceptSelf(nums) that takes the input array nums and returns the desired output array.
+
+Constraints:
+
+You must solve it without using division.
+You cannot use extra space (other than the output array).
+Time complexity should be O(n).
+
+-->
+
+
+
+function productExceptSelf(nums) {
+    const n = nums.length;
+    const output = new Array(n).fill(1); 
+
+    // Calculate left products
+    let leftProduct = 1;
+    for (let i = 0; i < n; i++) {
+        output[i] *= leftProduct; // Multiply current element with left product
+        leftProduct *= nums[i]; // Update left product
+    }
+
+    // Calculate right products
+    let rightProduct = 1;
+    for (let i = n - 1; i >= 0; i--) {
+        output[i] *= rightProduct; // Multiply current element with right product
+        rightProduct *= nums[i]; // Update right product
+    }
+
+    return output;
+}
+
+</script>
+</body>
+</html>
