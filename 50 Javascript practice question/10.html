@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">This is a paragraph</p>
+    <button onclick="changedPara()">Change paragraph</button>
+
+    <script>
+        // console.log(paragraph)
+        function changedPara(){
+            let para = document.getElementById('para');
+            if (para.textContent === 'This is a paragraph') {
+                para.textContent ='Paragraph changed'
+            }else{
+                para.textContent = 'This is a paragraph'
+            }
+        }
+    </script>
+</body>
+</html>
