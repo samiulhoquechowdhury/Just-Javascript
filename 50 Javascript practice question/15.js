@@ -1,6 +1,6 @@
 //random number
 function getRandomNumber(min,max) {
-    return Math.floor(Math.random()*(20+1))*20;
+    return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-console.log(getRandomNumber(20,40))
+console.log(getRandomNumber(10,20));
