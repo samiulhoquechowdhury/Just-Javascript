@@ -21,12 +21,26 @@
 
 //conplex condition
 
-const items = [
-    { name: 'Apple', category: 'Fruit', price: 1 },
-    { name: 'Carrot', category: 'Vegetable', price: 0.5 },
-    { name: 'Banana', category: 'Fruit', price: 1.2 }
-  ];
+// const items = [
+//     { name: 'Apple', category: 'Fruit', price: 1 },
+//     { name: 'Carrot', category: 'Vegetable', price: 0.5 },
+//     { name: 'Banana', category: 'Fruit', price: 1.2 }
+//   ];
 
-  const expensiveFuits = items.filter(item=> item.category === 'Fruit' && item.price > 1)
+//   const expensiveFuits = items.filter(item=> item.category === 'Fruit' && item.price > 1)
 
-  console.log(expensiveFuits);
+//   console.log(expensiveFuits);
+
+//using index and array in filter
+
+// const numbers = [1,2,3,4,5,6]
+
+// const oddIndexElement = numbers.filter((number,index)=> index % 2!==0)
+
+// console.log(oddIndexElement);
+
+//Filtering duplicate elements
+
+const numbers = [4, 1, 2, 3, 4, 5, 4, 1, 6, 9, 1, 2]
+const uniqueNumber = numbers.filter((number, index, array) => array.indexOf(number) === index);
+console.log(uniqueNumber);
