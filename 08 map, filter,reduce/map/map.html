@@ -1,74 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<script>
+    <script>
 
 
-    //map basic usage
+        //map basic usage
 
-    const arr1 = [1,5,8,12,5];
-    const doubled = arr1.map(num => num * 2);
-    console.log(doubled);
+        const arr1 = [1, 5, 8, 12, 5];
+        const doubled = arr1.map(num => num * 2);
+        console.log(doubled);
 
-    //Maping an array of object
-    const users = [
-        {name:'Samiul', age: 12},
-        {name:'Rahul', age: 14},
-        {name:'Anish', age: 18}
-    ];
-    const names = users.map(user => user.name);
-    console.log(names);
+        //Maping an array of object
+        const users = [
+            { name: 'Samiul', age: 12 },
+            { name: 'Rahul', age: 14 },
+            { name: 'Anish', age: 18 }
+        ];
+        const names = users.map(user => user.name);
+        console.log(names);
 
-    //Use map with a function
+        //Use map with a function
 
-    const numbers = [1,2,3,4,5];
-    function addTen(num) {
-        return num + 10;
-    }
-    const result = numbers.map(addTen)
-    console.log(result);
+        const numbers = [1, 2, 3, 4, 5];
+        function addTen(num) {
+            return num + 10;
+        }
+        const result = numbers.map(addTen)
+        console.log(result);
 
-    //add ten
-    const arr3 = [1,2,3,4,5];
-    function addTwenty(num){
-        return num + 20;
-    }
-    const result2 = arr3.map(addTwenty)
-    console.log(result2);
-
-
-
+        //add ten
+        const arr3 = [1, 2, 3, 4, 5];
+        function addTwenty(num) {
+            return num + 20;
+        }
+        const result2 = arr3.map(addTwenty)
+        console.log(result2);
 
 
 
-    //Mapping to create a new object
-
-    const customers = [
-        {name: 'samiul', age: 12},
-        {name: 'Rahul', age: 19}
-    ];
-
-    const newCustomer = customers.map(customer =>({
-        ...customer,
-        isActive: true
-    }));
-    console.log(newCustomer);
 
 
 
-    //Maping an array with index
+        //Mapping to create a new object
 
-    const letters = ['a', 'b', 'c'];
-    const indexedLetter =  letters.map((letter, index)=> `${index} :${letter}`);
-    console.log(indexedLetter);
+        const customers = [
+            { name: 'samiul', age: 12 },
+            { name: 'Rahul', age: 19 }
+        ];
+
+        const newCustomer = customers.map(customer => ({
+            ...customer,
+            isActive: true
+        }));
+        console.log(newCustomer);
 
 
 
-</script>
+        //Maping an array with index
+
+        const letters = ['a', 'b', 'c'];
+        const indexedLetter = letters.map((letter, index) => `${index} :${letter}`);
+        console.log(indexedLetter);
+
+
+
+
+
+        //Using Map for DOM Manipulation (React Example)
+
+        // const items = ['apple', 'banana', 'cherry'];
+
+        // const ItemList = () => (
+        //     <ul>
+        //         {items.map((item, index) => (
+        //             <li key={index}>{item}</li>
+        //         ))}
+        //     </ul>
+        // );
+
+        // export default ItemList;
+
+
+
+
+
+        //Chaining Map with Other Array Methods
+        const numbe = [1, 2, 3, 4, 5];
+        const processedNumbers = numbe.filter(num => num % 2 === 0).map(num => num * 10);
+        console.log(processedNumbers); // [20, 40]
+
+
+
+        // Flattening an Array
+
+
+        const nestedArrays = [[1, 2], [3, 4], [5, 6]];
+        const flattened = nestedArrays.map(arr => arr).flat();
+        console.log(flattened); // [1, 2, 3, 4, 5, 6]
+
+
+
+        //Using Map for Conditional Mapping
+
+
+        const numbers2 = [1, 2, 3, 4, 5];
+        const processedNumbers2 = numbers2.map(num => (num % 2 === 0 ? num * 2 : num));
+        console.log(processedNumbers2); // [1, 4, 3, 8, 5]
+
+
+
+
+
+    </script>
 </body>
+
 </html>
