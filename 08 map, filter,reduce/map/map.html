@@ -41,6 +41,19 @@
     const result2 = arr3.map(addTwenty)
     console.log(result2);
 
+    //Mapping to create a new object
+
+    const customers = [
+        {name: 'samiul', age: 12},
+        {name: 'Rahul', age: 19}
+    ];
+
+    const newCustomer = customers.map(customer =>({
+        ...customer,
+        isActive: true
+    }));
+    console.log(newCustomer);
+
 
 
 </script>
