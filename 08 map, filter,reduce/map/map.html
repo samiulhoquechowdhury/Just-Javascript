@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    //map basic usage
+
+    const arr1 = [1,5,8,12,5];
+    const doubled = arr1.map(num => num * 2);
+    console.log(doubled);
+
+    //Maping an array of object
+    const users = [
+        {name:'Samiul', age: 12},
+        {name:'Rahul', age: 14},
+        {name:'Anish', age: 18}
+    ];
+    const names = users.map(user => user.name);
+    console.log(names);
+
+    //Use map with a function
+
+    const numbers = [1,2,3,4,5];
+    function addTen(num) {
+        return num + 10;
+    }
+    const result = numbers.map(addTen)
+    console.log(result);
+
+    //add ten
+    // const arr3 = [1,2,3,4,5];
+
+
+
+</script>
+</body>
+</html>
