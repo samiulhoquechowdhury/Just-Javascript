@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.user-card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-card p {
+    margin: 5px 0;
+    color: #555;
+}
